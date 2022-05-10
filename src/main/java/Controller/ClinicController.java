@@ -25,7 +25,7 @@ public class ClinicController implements IClinicController {
 
     @Override
     public Clinic searchClinic(int id) {
-        Clinic retorno = new Clinic();
+        Clinic retorno = null;
         for ( Clinic c : DataSetClinic.data ){
             if( c.getId() == id){
                retorno = c;
